@@ -15,6 +15,11 @@ if(parola.toLowerCase() == parolaReverse.toLowerCase()) {
 
 //Funzione che a partire da una parola, restituisce la stessa stringa invertita
 function invertiParola(parolaDaInvertire) {
+
+    // Non usate:
+    // return parolaDaInvertire.split('').reverse().join('');
+    // ATTENZIONE: x.reverse() cambia l'ordine dell'array originale
+
     let parolaInvertita = "";
 
     for (let i = parolaDaInvertire.length - 1; i >= 0; i--) {
